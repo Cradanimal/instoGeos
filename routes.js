@@ -12,6 +12,7 @@ var logic = function(req, res) {
     const lng = resp.results[0].geometry.location.lng
     console.log(lat, lng);
     return fetch('https.//api.instagram.com/v1/media/search?lat='+lat+'&lng='+lng+'&client_')
+    // TODO get instagram client ID and plug it into API request
     res.send('hello world');
   })
 };
